@@ -30,7 +30,7 @@ const initApp = (app, express) => {
     })
     //Setup API Routing 
     app.get("/", (req, res, next) => {
-        return res.status(200).json({ message: "Welcome to E-commerce APP C40  online" })
+        return res.status(200).json({ message: "Welcome to E-commerce APP C40  online2" })
     })
     app.use(`/auth`, authRouter)
     app.use(`/user`, userRouter)
