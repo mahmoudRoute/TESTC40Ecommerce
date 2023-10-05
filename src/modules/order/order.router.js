@@ -21,4 +21,10 @@ router.patch("/cancel/:id",
 )
 
 
+
+
+
+app.post('/webhook', express.raw({ type: 'application/json' }), orderController.webHook);
+
+
 export default router
