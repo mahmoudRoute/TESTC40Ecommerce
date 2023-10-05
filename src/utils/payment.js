@@ -14,8 +14,8 @@ async function payment({
     discounts = []
 }) {
     const session = stripe.checkout.sessions.create({
-        payment_method_types: ['card'],
-        mode: 'payment',
+        payment_method_types,
+        mode,
         customer_email,
         metadata,
         cancel_url,
