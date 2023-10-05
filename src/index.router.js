@@ -20,6 +20,7 @@ const initApp = (app, express) => {
     } else {
         app.use(morgan("combined"))
     }
+    app.use(cors())
     //convert Buffer Data
     app.use((req, res, next) => {
         if (req.originalUrl == '/order/webhook') {
